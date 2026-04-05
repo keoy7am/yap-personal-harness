@@ -1,0 +1,8 @@
+{
+  "name": "yap-personal-harness",
+  "version": "1.0.0",
+  "description": "Personal Agent Harness: pluggable memory providers (claude-mem/serena/local), session lifecycle hooks, workflow chaining, and gstack-replacement planning & review pipeline",
+  "author": { "name": "YAP" },
+  "license": "MIT",
+  "keywords": ["harness", "memory", "lifecycle", "workflow", "planning", "review", "ship", "impact-framework"]
+}

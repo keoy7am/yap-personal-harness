@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "memory": {
+    "provider": "claude-mem",
+    "providers_available": ["claude-mem", "serena", "local", "none"],
+    "local_memory_dir": "./memory",
+    "local_auto_load": ["CONTEXT.md", "DECISIONS.md", "PROGRESS.md"]
+  },
+  "planning": {
+    "provider": "yap-plan"
+  },
+  "session": {
+    "auto_summarize_on_stop": true,
+    "summary_provider": "claude-mem"
+  },
+  "workflow": {
+    "phases": ["research", "plan", "implement", "review"],
+    "review_command": "auto-review:multi-team",
+    "confirm_between_phases": true
+  }
+}
