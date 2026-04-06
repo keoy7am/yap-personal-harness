@@ -9,6 +9,10 @@ Sequential review pipeline. Replaces gstack `/autoplan`.
 
 **Critical**: Reviews run SEQUENTIALLY. Each phase receives the output of the previous phase. Do NOT run in parallel — parallel reviews produce contradictory findings without shared context.
 
+## Step 0 — Activate MCP Tools
+
+Invoke `mcp__sequential-thinking__sequentialthinking` to structure the multi-phase review process. Use it to track cross-phase findings and ensure consistency between CEO → Eng → DX reviews. If unavailable, proceed natively.
+
 ## Step 1 — Find Plan File
 
 Look for the most recent plan file in `~/.claude/plans/`. If multiple exist, ask the user which one to review.

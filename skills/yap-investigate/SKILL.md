@@ -9,6 +9,10 @@ Replaces gstack `/investigate`. No telemetry.
 
 **Iron Law**: Do not attempt a fix until Phase 3 (Hypothesize) is complete and a root cause has been identified.
 
+## Phase 0 — Activate Sequential Thinking
+
+Invoke `mcp__sequential-thinking__sequentialthinking` now to structure the investigation. Use it throughout all phases to track hypotheses, evidence, and reasoning chains. If unavailable, proceed natively.
+
 ## Phase 1 — Investigate
 
 **Goal**: Gather all available evidence before forming any hypotheses.

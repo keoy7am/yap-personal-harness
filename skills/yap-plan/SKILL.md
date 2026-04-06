@@ -13,7 +13,16 @@ Replaces `/gstack` planning. Creates structured implementation plans without tel
 2. If `CLAUDE.md` exists in the project root, read it for architecture constraints
 3. If a previous plan exists in `~/.claude/plans/`, check if it's still relevant
 
-## Step 2 — Requirements Analysis
+## Step 2 — Activate MCP Tools (if available)
+
+Before analysis, activate relevant MCP tools:
+
+- **Sequential Thinking** (`mcp__sequential-thinking__sequentialthinking`): Use for multi-step architectural analysis, dependency mapping, and trade-off evaluation. Invoke it now to structure the planning process.
+- **Context7** (`mcp__plugin_context7_context7__resolve-library-id` + `get-library-docs`): Use if the task involves external libraries, frameworks, or APIs. Resolve the library ID and fetch relevant docs before making architectural decisions.
+
+If these tools are unavailable, proceed with native analysis.
+
+## Step 3 — Requirements Analysis
 
 Understand the task through two lenses:
 
@@ -23,7 +32,7 @@ Understand the task through two lenses:
 
 If requirements are unclear, ask ONE focused clarifying question before proceeding.
 
-## Step 3 — Plan Generation
+## Step 4 — Plan Generation
 
 Generate a structured plan with this format:
 
@@ -52,12 +61,12 @@ Generate a structured plan with this format:
 <What is explicitly NOT being done in this plan.>
 ```
 
-## Step 4 — Save Plan
+## Step 5 — Save Plan
 
 Generate a URL-safe slug from the task title.
 Save to `~/.claude/plans/<slug>.md`.
 
-## Step 5 — Output Summary
+## Step 6 — Output Summary
 
 Output a concise summary:
 ```
